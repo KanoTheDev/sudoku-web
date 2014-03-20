@@ -6,6 +6,8 @@ require 'rack-flash'
 
 use Rack::Flash 
 
+set :session_secret, "secretkey"
+
 set :partial_template_engine, :erb
 enable :sessions
 
