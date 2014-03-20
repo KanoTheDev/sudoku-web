@@ -21,3 +21,10 @@ I, [2014-03-20T19:12:11.323742 #16951]  INFO -- : 0:  shotgun (0.9) from /Users/
 I, [2014-03-20T19:12:11.324115 #16951]  INFO -- : 0:  tilt (1.4.1) from /Users/karolis/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
 I, [2014-03-20T19:12:11.324462 #16951]  INFO -- : 0:  sinatra (1.4.4) from /Users/karolis/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
 I, [2014-03-20T19:12:11.324845 #16951]  INFO -- : 0:  bundler (1.5.1) from /Users/karolis/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
+I, [2014-03-20T19:42:06.794473 #17152]  INFO -- : 0:  rack (1.5.2) from /Users/karolis/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-03-20T19:42:06.795010 #17152]  INFO -- : 0:  rack-protection (1.5.2) from /Users/karolis/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-03-20T19:42:06.795386 #17152]  INFO -- : 0:  shotgun (0.9) from /Users/karolis/.rvm/gems/ruby-2.1.0/specifications/shotgun-0.9.gemspec
+I, [2014-03-20T19:42:06.795756 #17152]  INFO -- : 0:  tilt (1.4.1) from /Users/karolis/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-03-20T19:42:06.796113 #17152]  INFO -- : 0:  sinatra (1.4.4) from /Users/karolis/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-03-20T19:42:09.395702 #17152]  INFO -- : 0:  sinatra-partial (0.4.0) from /Users/karolis/.rvm/gems/ruby-2.1.0/specifications/sinatra-partial-0.4.0.gemspec
+I, [2014-03-20T19:42:09.396355 #17152]  INFO -- : 0:  bundler (1.5.1) from /Users/karolis/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec

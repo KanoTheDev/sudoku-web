@@ -1,7 +1,11 @@
 require 'sinatra'
 require_relative './lib/sudoku'
 require_relative './lib/cell'
+require 'sinatra/partial'
+require 'rack-flash'
 
+use Rack::Flash 
+set :partial_template_engine, :erb
 enable :sessions
 
 get '/' do
@@ -19,7 +23,7 @@ get '/solution' do
 end
 
 post "/" do
-  
+
   cells = box_order_to_row_order(params["cell"])  
   session[:current_solution] = cells.map{|value| value.to_i }.join
   session[:check_solution] = true
