@@ -3,8 +3,13 @@ require_relative './lib/sudoku'
 require_relative './lib/cell'
 
 get '/' do 
-	@current_solution = random_sudoku
+	@current_solution = puzzle(random_sudoku)
   erb :index
+end
+
+def unsolved_sudoku
+	@unsolved_sudoku = random_sudoku
+
 end
 
 def random_sudoku
@@ -12,4 +17,8 @@ def random_sudoku
 	sudoku = Sudoku.new(seed.join)
 	sudoku.solve!
 	sudoku.to_s.chars
+end
+
+def puzzle(sudoku)
+  sudoku.map! {|x| rand < 0.3 ? 0 : x} 
 end
