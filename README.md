@@ -1,1 +1,2 @@
-# Sudoku game written using Sinatra
+# Sudoku 
+## Game written using Sinatra
