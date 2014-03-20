@@ -2,6 +2,11 @@
 	font-size: 0;
 	text-align: center;
 }
+
+#flash {
+  margin: 20px;
+}
+
 div.box, div.cell {
 	display: inline-block;
 }
@@ -25,3 +30,4 @@ body {
 .value-provided {
   background-color: #DDD;
 }
+
