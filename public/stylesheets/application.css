@@ -11,6 +11,10 @@ div.box, div.cell {
 	display: inline-block;
 }
 
+div.box {
+	outline-style: groove;
+}
+
 .cell input {
 	font-size: 20;
 	text-align: center;
