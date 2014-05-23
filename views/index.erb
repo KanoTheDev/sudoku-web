@@ -1,24 +1,41 @@
-<h1>Life is too short for playing and </br > creating Sudoku games</h1>
+<h1>Sudoku</h1>
+<h3>Life is too short for playing Sudoku</h3>
 <div id="flash">
-  <%= flash[:notice] %>
+	<span class="incorrect_notice"><%= flash[:incorrect_notice] %></span><br/>
+	<span class="correct_notice"><%= flash[:correct_notice] %></span>
 </div>
 <div id="sudoku">
-  <form action="/" method="post">
-      <% 3.times do |row| %>
-        <div class='row'>
-          <% 3.times do |box| %>
-              <div class="box">
-             <% 3.times do |cell_row| %>
-                <div class="cell-row">
-                  <% 3.times do |cell| %>
-                    <%= partial :cell, :locals=>{:cell_index => row*27+box*3+cell_row*9+cell} %>
-                  <% end %>
-                  </div>
-                <% end %>
-              </div>
-            <% end %>
-          </div>
-        <% end %>
-      <button>Check solution</button>
-    </form>
-  </div>
+	<form action="/" method="post">
+		<% 3.times do |row| %>
+			<div class="row">
+				<% 3.times do |box| %>
+					<div class="box">
+						<% 3.times do |cell_row| %>
+							<div class="cell-row">
+								<% 3.times do |cell| %>
+									<%= partial :cell, :locals=>{:cell_index => row * 27 + box * 3 + cell_row * 9 + cell} %>
+								<% end %>
+							</div>
+						<% end %>
+					</div>
+				<% end %>
+			</div>
+		<% end %>
+		<button class="first-btn">Check solution</button>
+		<button name="save" value="true">Save Game</button>
+		<button name="reset" value="true">Reset Game</button>
+	</form>
+	<form action="/solution" method="get"><button>Show Solution</button></form>
+</div>
+
+<h3>New Game</h3>
+<div class="new-game btn">
+	<form action="/set" method="post">
+		<button name="difficulty" value="easy">Easy Puzzle</button>
+		<button name="difficulty" value="medium">Medium Puzzle</button>
+		<button name="difficulty" value="hard">Hard Puzzle</button>
+	</form>
+	<form action="/help" method="get">
+		<button>How to Play</button>
+	</form>
+</div>

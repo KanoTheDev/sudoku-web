@@ -25,6 +25,7 @@ div.box {
 body {
 	text-align: center;
 	font-family: Arial;
+  background-image: url('../images/paper.png');
 }
 
 .incorrect {
@@ -35,3 +36,25 @@ body {
   background-color: #DDD;
 }
 
+.box {
+  outline-style: ridge;
+  outline-width: thick;
+  outline-color: grey;
+  display: inline-block;
+}
+
+.first-btn {
+	margin-top: 15px;
+}
+
+.btn {
+	display: inline-block;
+}
+
+.incorrect_notice {
+  background-color: yellow
+}
+
+.correct_notice {
+  background-color: green
+}
