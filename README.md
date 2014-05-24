@@ -1,4 +1,4 @@
-Sudoku-web
+Sudoku-web 
 ---
 ![](sudoku.png?raw=true)
 
@@ -23,5 +23,5 @@ the Sudoku solver code written by @shadchnev.
 ### Instructions
 To run the application run `shotgun` and visit
 `localhost:9393` in the browser. It is also live on
-Heroku, just visit sudoku-prod-app.herokuapp.com
+Heroku, just visit http://sudoku-prod-app.herokuapp.com
 .
